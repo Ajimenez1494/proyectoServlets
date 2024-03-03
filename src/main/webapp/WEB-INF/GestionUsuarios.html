@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Gestión de Usuarios</h1>
+    
+    <!-- Filtros -->
+    <label for="filterInput">Filtrar por:</label>
+    <input type="text" id="filterInput">
+    <button onclick="filterTable()">Filtrar</button>
+    
+    <!-- Tabla de Usuarios -->
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0)">Nombre</th>
+                <th onclick="sortTable(1)">Apellido</th>
+                <!-- Agrega más cabeceras según tus datos -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Filas de datos de usuarios se generarán dinámicamente aquí -->
+        </tbody>
+    </table>
+</body>
+</html>
