@@ -5,25 +5,24 @@ import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 
 public class JpaUtils {
-	private static EntityManager em;
-	
-	public static EntityManager getEntityManager() {
-	
-		return getEntityManager("hibernateOracle");
-		
-	}
-	
-	
-	public static EntityManager getEntityManager(String persitenceUnit) {
-		
-		if (em==null) {
-			EntityManagerFactory emf = Persistence.createEntityManagerFactory(persitenceUnit);
-			em = emf.createEntityManager();
-		}
+//  private static final EntityManagerFactory entityManagerFactory = buildEntityManagerFactory();
+//
+//  private static EntityManagerFactory buildEntityManagerFactory(){
+//      return Persistence.createEntityManagerFactory("hibernateOracle");
+//  }
+//
+//  public static EntityManager getEntityManager() { 
+//      return entityManagerFactory.createEntityManager();
+//  }
+  
+  public static EntityManager getEM (String persistenceUnit) {
+  	EntityManagerFactory emf = Persistence.createEntityManagerFactory(persistenceUnit);
+  	EntityManager em = emf.createEntityManager(); 
+  	
+  	return em;
+  }
 
-		return em;
-		
-	}
+
 	
 	
 }

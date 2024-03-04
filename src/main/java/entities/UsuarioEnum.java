@@ -1,8 +1,11 @@
+package entities;
+
 import java.time.LocalDate;
 
 public enum UsuarioEnum {
+	USUARIO1( "NOM", "apellidos"," DNI"," sexo"," password"," email", 2123L ,LocalDate.now(), "user");
 	
-	//private id idUsuario;
+	private String idUsuario;
 	private String nombre;
 	private String apellidos;
 	private String dni;
