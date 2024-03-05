@@ -82,6 +82,12 @@ public enum UsuarioEnum {
 	public void setFechaNacimiento(LocalDate fechaNacimiento) {
 		this.fechaNacimiento = fechaNacimiento;
 	}
+	public String getIdUsuario() {
+		return idUsuario;
+	}
+	public void setIdUsuario(String idUsuario) {
+		this.idUsuario = idUsuario;
+	}
 	
 	
 }
